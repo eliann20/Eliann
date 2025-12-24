@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación de Cumpleaños</title>
+    <style>
+        /* Estilos Generales */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        /* Tarjeta de Invitación */
+        .card {
+            background: white;
+            width: 90%;
+
+            max-width: 450px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+            border: 8px solid #ffd700; /* Borde dorado */
+        }
+
+        /* Encabezado con Imagen o Color */
+        .header {
+            background: #6c5ce7;
+            color: white;
+            padding: 40px 20px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Cuerpo de la invitación */
+        .content {
+            padding: 30px;
+            color: #333;
+        }
+
+        .name {
+            font-size: 1.8rem;
+            color: #6c5ce7;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .details {
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+
+        .info-row {
+            margin: 10px 0;
+            font-size: 1.1rem;
+        }
+
+        /* Botón de Confirmación */
+        .btn-confirm {
+            display: inline-block;
+            background-color: #25d366; /* Color WhatsApp */
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .btn-confirm:hover {
+            transform: scale(1.05);
+        }
+
+        /* Decoración */
+        .confetti {
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="header">
+            <div class="confetti">🎉 🎂 🎈</div>
+            <h1>¡ESTÁS INVITADO!</h1>
+        </div>
+
+        <div class="content">
+            <p>Acompañame a celebrar el cumpleaños de:</p>
+            <div class="name">ELIANN MATHIAS</div>
+            
+            <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
+
+            <div class="details">
+                <div class="info-row">📅 <strong>FECHA:</strong> 10 de Febrero</div>
+                <div class="info-row">⏰ <strong>HORA:</strong> 18:00 hrs</div>
+                <div class="info-row">📍 <strong>LUGAR:</strong> En mi Casa </div>
+            </div>
+
+            <p>¡No faltes, habrá mucha diversión!</p>
+
+            <a href="https://wa.me/1234567890?text=¡Hola! Confirmo mi asistencia al cumple" class="btn-confirm">
+                CONFIRMAR ASISTENCIA
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
